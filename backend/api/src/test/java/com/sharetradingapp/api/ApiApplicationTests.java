@@ -1,10 +1,10 @@
-package com.example.api;
+package com.sharetradingapp.api;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ApiApplicationTests {
+class ApiTests {
 
 	@Test
 	void contextLoads() {
