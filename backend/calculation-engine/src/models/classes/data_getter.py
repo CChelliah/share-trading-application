@@ -9,7 +9,7 @@ import time
 
 class DataGetter:
     def __init__(self): 
-        self.path = Path(__file__).parents[3] /"data/raw/ASXCompanies.csv"
+        self.path = Path(__file__).parents[3] /"data/raw/ASX10.csv"
         self.valid_tickers = None
         self.valid_data = None
 

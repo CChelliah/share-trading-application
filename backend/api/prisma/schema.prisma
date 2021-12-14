@@ -1,0 +1,36 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by the Prisma Client.
+model ShareData {
+  Date        DateTime? @db.Timestamp(6)
+  Open        Float?
+  High        Float?
+  Low         Float?
+  Close       Float?
+  Adj_Close   Float?    @map("Adj Close")
+  Volume      BigInt?
+  MACD        Float?
+  MACD_Signal Float?    @map("MACD Signal")
+  MACD_Hist   Float?    @map("MACD Hist")
+  Stoch_Fastk Float?    @map("Stoch Fastk")
+  Stoch_Fastd Float?    @map("Stoch Fastd")
+  OBV         Float?
+  Ticker      String?
+  index       Int       @id @unique(map: "unique_shareidx") @default(autoincrement())
+
+  @@index([Ticker], map: "ticker_idx")
+}
+
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by the Prisma Client.
+model ShareMapping {
+  Ticker String?
+  Id     BigInt?
+  index  Int     @id @unique(map: "unique_sharemappingidx") @default(autoincrement())
+}
