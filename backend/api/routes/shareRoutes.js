@@ -3,6 +3,6 @@ const router = express.Router()
 
 const { shareController } = require('../controllers')
 
-router.get('/custom', shareController.custom)
+router.post('/custom', shareController.custom)
 
 module.exports = router

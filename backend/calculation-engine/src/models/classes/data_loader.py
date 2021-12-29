@@ -6,10 +6,10 @@ from sqlalchemy_utils import database_exists, create_database
 from io import StringIO
 
 param_dic = {
-    "host" : "localhost",
-    "database" : "shareapplication",
-    "user" : "cavinashchelliah",
-    "password" : "Mccp07089426."
+    "host" : "db",
+    "database" : "shareapplicationdb",
+    "user" : "user",
+    "password" : "password"
 }
 
 class DataLoader: 
@@ -24,7 +24,7 @@ class DataLoader:
         return
 
     def create_database(self):
-        engine = create_engine("postgresql://localhost/shareapplication")
+        engine = create_engine("postgresql+psycopg2://user:password@db:5432/shareapplicationdb")
         if not database_exists(engine.url):
             create_database(engine.url) 
         return

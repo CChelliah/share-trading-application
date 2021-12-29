@@ -13,14 +13,14 @@ const Select:FC<ISelect> = ( { selectedValue = 'MACD', getSelected, id }) => {
   useEffect(() => {
   }, [selected])
   return (
-    <div className='flex flex-1 items-center justify-center'>
-      <div className='flex-1 relative inline-block text-left h-full'>
+    <div className='flex flex-1 items-center justify-center overflow-visible z-50 opacity-100'>
+      <div className='flex-1 relative inline-block text-left h-full overflow-visible z-50 opacity-100'>
         <Listbox value={selected} onChange={e => updateSelected(e)}>
           {({ open }) => (
             <>
               <span className='rounded-md shadow-sm'>
-                <Listbox.Button className='flex flex-1 h-full inline-flex justify-center w-full py-2 text-sm font-medium leading-5 text-gray-700 transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md hover:text-gray-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800 items-center p-6'>
-                  <span className='text-gray-700'>{selected}</span>
+                <Listbox.Button className='flex flex-1 h-full inline-flex justify-center w-full py-2 text-sm font-medium leading-5 text-blue-600 transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md hover:text-gray-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-gray-50 active:text-blue-600 items-center p-6 overflow-visible z-50 opacity-100'>
+                  <span className='text-blue-600'>{selected}</span>
                   <svg
                     className='w-5 h-5 ml-2 -mr-1'
                     viewBox='0 0 20 20'
@@ -46,7 +46,7 @@ const Select:FC<ISelect> = ( { selectedValue = 'MACD', getSelected, id }) => {
               >
                 <Listbox.Options
                   static
-                  className='z-50 absolute w-full mt-2 origin-top-right bg-white border border-gray-400 divide-y divide-gray-400 rounded-md shadow-lg outline-none'
+                  className='z-50 opacity-100 opacity-100 absolute w-full mt-2 origin-top-right bg-white border border-gray-400 divide-y divide-gray-400 rounded-md shadow-lg outline-none overflow-visible'
                 >
                   {indicators.map((opt) => (
                     <Listbox.Option className='text-center font-bold p-1'

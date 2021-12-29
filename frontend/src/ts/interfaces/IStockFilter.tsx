@@ -1,6 +1,10 @@
 export interface IStockFilter {
-    id?: number;
+    id?: number | null;
     indicator?: string | null;
     operator?: string | null;
-    value?: number | null;
+    value?: string | null;
+}
+
+export interface IStockFiltersState {
+    stockFilters: IStockFilter[];
 }

@@ -4,6 +4,7 @@ const { utils } = require('../utils')
 const { shareCustomSchema } = require('../middlewares/validators')
 
 exports.custom = async (req, res) => {
+  console.log(req.body)
   const { error } = await shareCustomSchema.validate(JSON.parse(JSON.stringify(req.body)))
   if (error) {
     res.send(error)

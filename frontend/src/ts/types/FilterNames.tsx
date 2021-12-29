@@ -1,0 +1,1 @@
+export type FilterNames = 'indicator'|'operator'|'value'

@@ -1,5 +1,8 @@
-export const emptyStockFilter = [{
-  indicator: 'null',
+export const EMPTY_STOCK_FILTER = {
+  id: 0,
+  indicator: 'MACD',
   operator: '',
-  value: 0
-}]
+  value: ''
+}
+
+export const DEFAULT_TITLES = ['Indicator', 'Operator', 'Value', 'Actions']
