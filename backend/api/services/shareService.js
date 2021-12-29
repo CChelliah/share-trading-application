@@ -8,7 +8,6 @@ const getCustomShares = async (data) => {
   const results = await Promise.all(shareTickers.map(async (e) => {
     return await getCustomShare(data, e.Ticker)
   }))
-  console.log(results)
   return results
 }
 

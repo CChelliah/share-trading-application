@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import { IFilterData } from '../ts/interfaces/IFilterData'
-import { IStockFilter, IStockFiltersState } from '../ts/interfaces/IStockFilter'
+import { IStockFiltersState } from '../ts/interfaces/IStockFilter'
 import { EMPTY_STOCK_FILTER } from '../utils/constants'
 import { FilterNames } from '../ts/types/FilterNames'
 

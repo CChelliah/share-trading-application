@@ -1,5 +1,5 @@
-import React, { FC, useEffect, useState } from 'react'
-import { useAppDispatch, useAppSelector } from '../../../app/hooks'
+import React, { FC } from 'react'
+import { useAppSelector } from '../../../app/hooks'
 import { IStockResultsTable } from '../../../ts/interfaces/IStockResultsTable'
 
 

@@ -1,5 +1,4 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
-import { collapseTextChangeRangesAcrossMultipleVersions } from 'typescript'
 import { IStockResultsTable } from '../ts/interfaces/IStockResultsTable'
 
 

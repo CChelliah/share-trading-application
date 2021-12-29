@@ -7,7 +7,7 @@ import { DEFAULT_TITLES } from '../../../utils/constants'
 
 
 
-const StockFiltersHome:FC<IStockFiltersHome> = ({}) => {
+const StockFiltersHome:FC<IStockFiltersHome> = () => {
     return(
         <div className="flex flex-1">
             <div className="flex flex-1 flex-col">

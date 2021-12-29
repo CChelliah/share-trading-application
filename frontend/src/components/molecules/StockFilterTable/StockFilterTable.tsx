@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useState } from 'react'
+import React, { FC } from 'react'
 import Select from '../../atoms/Select'
 import { XCircleIcon, PlusCircleIcon } from '@heroicons/react/solid'
 import { useAppDispatch, useAppSelector } from '../../../app/hooks'
@@ -8,7 +8,6 @@ import { IStockFilterTable } from '../../../ts/interfaces/IStockFilterTable'
 import { IFilterData } from '../../../ts/interfaces/IFilterData'
 import { IStockFilter } from '../../../ts/interfaces/IStockFilter'
 import { useGetCustomQuery } from '../../../features/api/stocks-api-slice'
-import { EMPTY_STOCK_FILTER} from '../../../utils/constants'
 
 
 const StockFilterTable:FC<IStockFilterTable> = ({
@@ -19,7 +18,6 @@ const StockFilterTable:FC<IStockFilterTable> = ({
 
     const filter = (filters: IStockFilter[]) => {
         const filtersCopy = JSON.parse(JSON.stringify(filters))
-        console.log(filtersCopy)
         const filtered = filtersCopy.map((filter :any) => {
             delete filter.id
             filter.value = Number(filter.value)
@@ -28,7 +26,7 @@ const StockFilterTable:FC<IStockFilterTable> = ({
         return filtered
     }
 
-    const {data, error, isFetching } = useGetCustomQuery(filter(stockFilters));
+    const {data} = useGetCustomQuery(filter(stockFilters));
 
     const handleAddFilterClick = () => {
         dispatch(addFilter())
