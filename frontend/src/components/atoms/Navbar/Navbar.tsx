@@ -1,6 +1,5 @@
-import React, {FC, useEffect, useState } from 'react'
-import { Listbox, Transition } from '@headlessui/react'
-import { INavbar } from '../../../ts/interfaces/INavbar'
+import React, {FC } from 'react'
+import { INavbar } from 'ts/interfaces/INavbar'
 
 
 const Navbar:FC<INavbar> = () => {

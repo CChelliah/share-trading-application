@@ -1,13 +1,13 @@
 import React, { FC } from 'react'
-import Select from '../../atoms/Select'
+import Select from 'components/atoms/Select'
 import { XCircleIcon, PlusCircleIcon } from '@heroicons/react/solid'
-import { useAppDispatch, useAppSelector } from '../../../app/hooks'
-import { addFilter, updateFilter, deleteFilter } from '../../../features/stockFilters-slice'
-import { updateStockResults } from '../../../features/stockResults-slice'
-import { IStockFilterTable } from '../../../ts/interfaces/IStockFilterTable'
-import { IFilterData } from '../../../ts/interfaces/IFilterData'
-import { IStockFilter } from '../../../ts/interfaces/IStockFilter'
-import { useGetCustomQuery } from '../../../features/api/stocks-api-slice'
+import { useAppDispatch, useAppSelector } from 'app/hooks'
+import { addFilter, updateFilter, deleteFilter } from 'features/stockFilters-slice'
+import { updateStockResults } from 'features/stockResults-slice'
+import { IStockFilterTable } from 'ts/interfaces/IStockFilterTable'
+import { IFilterData } from 'ts/interfaces/IFilterData'
+import { IStockFilter } from 'ts/interfaces/IStockFilter'
+import { useGetCustomQuery } from 'features/api/stocks-api-slice'
 
 
 const StockFilterTable:FC<IStockFilterTable> = ({

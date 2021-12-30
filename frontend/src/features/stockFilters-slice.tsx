@@ -1,8 +1,8 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
-import { IFilterData } from '../ts/interfaces/IFilterData'
-import { IStockFiltersState } from '../ts/interfaces/IStockFilter'
-import { EMPTY_STOCK_FILTER } from '../utils/constants'
-import { FilterNames } from '../ts/types/FilterNames'
+import { IFilterData } from 'ts/interfaces/IFilterData'
+import { IStockFiltersState } from 'ts/interfaces/IStockFilter'
+import { EMPTY_STOCK_FILTER } from 'utils/constants'
+import { FilterNames } from 'ts/types/FilterNames'
 
 const initialState: IStockFiltersState = {
     stockFilters: [EMPTY_STOCK_FILTER]

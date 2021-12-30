@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
-import { IStockResultsTable } from '../ts/interfaces/IStockResultsTable'
+import { IStockResultsTable } from 'ts/interfaces/IStockResultsTable'
 
 
 const initialState: IStockResultsTable = {

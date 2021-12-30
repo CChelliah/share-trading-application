@@ -1,9 +1,9 @@
 import React, { FC }from 'react'
-import StockFilterTable from '../../molecules/StockFilterTable'
-import StockResultsTable from '../../molecules/StockResultsTable'
-import Navbar from '../../atoms/Navbar'
-import { IStockFiltersHome } from '../../../ts/interfaces/IStockFiltersHome'
-import { DEFAULT_TITLES } from '../../../utils/constants'
+import StockFilterTable from 'components/molecules/StockFilterTable'
+import StockResultsTable from 'components/molecules/StockResultsTable'
+import Navbar from 'components/atoms/Navbar'
+import { IStockFiltersHome } from 'ts/interfaces/IStockFiltersHome'
+import { DEFAULT_TITLES } from 'utils/constants'
 
 
 

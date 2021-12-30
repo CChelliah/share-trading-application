@@ -1,10 +1,9 @@
 import React, { FC } from 'react'
-import { useAppSelector } from '../../../app/hooks'
-import { IStockResultsTable } from '../../../ts/interfaces/IStockResultsTable'
+import { useAppSelector } from 'app/hooks'
+import { IStockResultsTable } from 'ts/interfaces/IStockResultsTable'
 
 
-const StockResultsTable: FC<IStockResultsTable> = ({
-}) => {
+const StockResultsTable: FC<IStockResultsTable> = () => {
     const stockResults = useAppSelector((state) => state.stockResults.stockResults) 
     return (
         <div className="flex flex-1 mt-2">

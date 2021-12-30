@@ -1,6 +1,6 @@
 import React, {FC, useEffect, useState } from 'react'
 import { Listbox, Transition } from '@headlessui/react'
-import { ISelect}  from '../../../ts/interfaces/ISelect'
+import { ISelect}  from 'ts/interfaces/ISelect'
 
 
 const Select:FC<ISelect> = ( { selectedValue = 'MACD', getSelected, id }) => {

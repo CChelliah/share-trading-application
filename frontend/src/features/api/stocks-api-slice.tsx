@@ -1,5 +1,5 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
-import { IStockFilter } from '../../ts/interfaces/IStockFilter'
+import { IStockFilter } from 'ts/interfaces/IStockFilter'
 
 export const stocksApiSlice = createApi({
   reducerPath: 'stocksAPI',
