@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import Home from './components/pages/StockFiltersHome'
+import Home from 'components/pages/StockFiltersHome'
 
 function App () {
   return (
